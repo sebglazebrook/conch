@@ -1,3 +1,6 @@
+require_relative "../ast/nodes/addition"
+require_relative "../ast/nodes/number"
+
 module Conch
   class Parser
 
