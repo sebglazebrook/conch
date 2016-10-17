@@ -1,10 +1,9 @@
+require "treetop"
+
 module Conch
   module Ast
     module Nodes
-      class Number
-
-        def initialize(value)
-        end
+      class Number < Treetop::Runtime::SyntaxNode
 
       end
     end

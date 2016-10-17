@@ -1,11 +1,9 @@
+require "treetop"
+
 module Conch
   module Ast
     module Nodes
-      class Addition
-
-        def initialize(left, right)
-          # TODO
-        end
+      class Addition < Treetop::Runtime::SyntaxNode
 
       end
     end

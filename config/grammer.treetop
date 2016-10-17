@@ -1,0 +1,11 @@
+# grammar.treetop
+grammar Grammer
+  rule number
+    [0-9]+ <Conch::Ast::Nodes::Number>
+  end
+
+  rule addition_expression
+    number "+" number <Conch::Ast::Nodes::Addition>
+  end
+
+end

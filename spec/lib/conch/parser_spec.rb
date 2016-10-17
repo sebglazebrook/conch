@@ -11,7 +11,7 @@ describe Conch::Parser do
       let(:string) { "3" }
 
       it "returns a Number ast node" do
-        expect(subject).to eq(Conch::Ast::Nodes::Number.new(3))
+        expect(subject).to be_kind_of(Conch::Ast::Nodes::Number)
       end
     end
 
@@ -20,7 +20,7 @@ describe Conch::Parser do
       let(:string) { "3 + 4" }
 
       it "returns an Addition ast node" do
-        expect(subject).to eq(Conch::Ast::Nodes::Addition.new(Conch::Ast::Nodes::Number.new(3), Conch::Ast::Nodes::Number.new(4)))
+        expect(subject).to be_kind_of(Conch::Ast::Nodes::Addition)
       end
     end
   end
