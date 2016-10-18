@@ -1,11 +1,16 @@
 # grammar.treetop
 grammar Grammer
+
+  rule addition_expression
+    number space? "+" space? number <Conch::Ast::Nodes::Addition>
+  end
+
   rule number
     [0-9]+ <Conch::Ast::Nodes::Number>
   end
 
-  rule addition_expression
-    number "+" number <Conch::Ast::Nodes::Addition>
+  rule space
+    ' '*
   end
 
 end
