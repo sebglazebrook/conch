@@ -1,6 +1,6 @@
-require_relative "../../lib/conch"
+require_relative "../../lib/gsh"
 
-describe Conch do
+describe Gsh do
 
   describe "#evaluate" do
 

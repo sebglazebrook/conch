@@ -1,7 +1,7 @@
-require_relative "./conch/parser"
-require_relative "./conch/virtual_machine"
+require_relative "./gsh/parser"
+require_relative "./gsh/virtual_machine"
 
-module Conch
+module Gsh
 
   def self.evaluate(string)
     tokens = Parser.parse_to_ast(string)

@@ -6,11 +6,11 @@ grammar Grammer
   end
 
   rule number
-    [0-9]+ <Conch::Ast::Nodes::Number>
+    [0-9]+ <Gsh::Ast::Nodes::Number>
   end
 
   rule addition_expression
-    number space? "+" space? number <Conch::Ast::Nodes::Addition>
+    number space? "+" space? number <Gsh::Ast::Nodes::Addition>
   end
 
   rule space

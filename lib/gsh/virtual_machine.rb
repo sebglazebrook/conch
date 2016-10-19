@@ -1,4 +1,4 @@
-module Conch
+module Gsh
   class VirtualMachine
 
     def self.evaluate(tokens)

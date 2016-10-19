@@ -1,6 +1,6 @@
-require_relative "../../../lib/conch/parser"
+require_relative "../../../lib/gsh/parser"
 
-describe Conch::Parser do
+describe Gsh::Parser do
 
   describe ".parse_to_ast" do
 
@@ -11,7 +11,7 @@ describe Conch::Parser do
       let(:string) { "3" }
 
       it "returns a Number ast node" do
-        expect(subject).to be_kind_of(Conch::Ast::Nodes::Number)
+        expect(subject).to be_kind_of(Gsh::Ast::Nodes::Number)
       end
     end
 
@@ -20,7 +20,7 @@ describe Conch::Parser do
       let(:string) { "3 + 4" }
 
       it "returns an Addition ast node" do
-        expect(subject).to be_kind_of(Conch::Ast::Nodes::Addition)
+        expect(subject).to be_kind_of(Gsh::Ast::Nodes::Addition)
       end
     end
   end

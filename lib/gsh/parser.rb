@@ -3,7 +3,7 @@ require_relative "../ast/nodes/number"
 
 require "treetop"
 
-module Conch
+module Gsh
   class Parser
 
     def self.parse_to_ast(string)

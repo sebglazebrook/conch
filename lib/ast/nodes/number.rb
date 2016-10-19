@@ -1,6 +1,6 @@
 require "treetop"
 
-module Conch
+module Gsh
   module Ast
     module Nodes
       class Number < Treetop::Runtime::SyntaxNode
