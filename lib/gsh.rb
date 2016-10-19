@@ -4,8 +4,8 @@ require_relative "./gsh/virtual_machine"
 module Gsh
 
   def self.evaluate(string)
-    tokens = Parser.parse_to_ast(string)
-    VirtualMachine.evaluate(tokens)
+    ast = Parser.parse_to_ast(string)
+    VirtualMachine.evaluate(ast)
   end
 
 end
