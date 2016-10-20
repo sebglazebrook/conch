@@ -1,8 +1,8 @@
 module Gsh
   class VirtualMachine
 
-    def self.evaluate(tokens)
-      # TODO
+    def self.evaluate(ast)
+      ast.visit
     end
 
   end
