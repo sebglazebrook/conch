@@ -1,11 +1,15 @@
-require "treetop" 
+require "treetop"
+require_relative "../visitable"
+
 module Gsh
   module Ast
     module Nodes
       class Addition < Treetop::Runtime::SyntaxNode
 
-        def visit
-          left.visit + right.visit
+        include Gsh::Ast::Visitable
+
+        def klass
+          'Addition'
         end
 
       end
