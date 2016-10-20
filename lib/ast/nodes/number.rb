@@ -1,12 +1,15 @@
 require "treetop"
+require_relative "../visitable"
 
 module Gsh
   module Ast
     module Nodes
       class Number < Treetop::Runtime::SyntaxNode
 
-        def visit
-          number.text_value.to_i
+        include Gsh::Ast::Visitable
+
+        def klass
+          'Number'
         end
       end
     end
